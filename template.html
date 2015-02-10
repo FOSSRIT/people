@@ -1,0 +1,13 @@
+<div id="{{person.handle}}" class="{{person.role|default('student')}}">
+	<img width="60px" height="60px" src="http://gravatar.com/avatar/{{person.email|md5sum}}?s=60" />
+	<strong>Name</strong>: {{person.name}}
+	<strong>Major/Year</strong>: {{person.major}}
+	<strong>IRC Handle</strong>: {{person.handle}}
+	<strong>GitHub/Forges URLs</strong>:
+	<ul>
+		{%- for name, url in person.forges|dictsort %}
+		<li><a target="_blank" href="{{url}}">{{name}}</a></li>
+		{%- endfor %}
+	</ul>
+	<blockquote>{{person.bio|default('')|escape}}</blockquote>
+</div>
