@@ -7,11 +7,14 @@ import yaml
 with open("template.html") as f:
     env = Environment(loader=FileSystemLoader('.'))
 
+def testbio(bio):
+    assert len(bio) < 140
+    return bio
+
 env.filters['md5sum'] = lambda value: hashlib.md5(value).hexdigest()
+env.filters['testbio'] = testbio
 
 template = env.get_template('template.html')
-
-# TODO: Handle too-long bios (>140 characters)
 
 with open("output.html", "w") as f:
     for yml in os.listdir("profiles"):

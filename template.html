@@ -9,5 +9,5 @@
 		<li><a target="_blank" href="{{url}}">{{name}}</a></li>
 		{%- endfor %}
 	</ul>
-	<blockquote>{{person.bio|default('')|escape}}</blockquote>
+	<blockquote>{{person.bio|default('')|testbio|escape}}</blockquote>
 </div>
