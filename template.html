@@ -3,7 +3,7 @@
 	<strong>Name</strong>: {{person.name}}
 	<strong>Major/Year</strong>: {{person.major}}
 	<strong>IRC Handle</strong>: {{person.handle}}
-	<strong>GitHub/Forges URLs</strong>:
+	<strong>Code Forges</strong>:
 	<ul>
 		{%- for name, url in person.forges|dictsort %}
 		<li><a target="_blank" href="{{url}}">{{name}}</a></li>
