@@ -30,10 +30,6 @@ def loadyaml(name):
         return yaml.load(inf)
 
 
-def yaml_filter(role):
-    return lambda yml: yml.get('role', 'student') == role
-
-
 def parse_arguments():
     ROLES = ["captain", "faculty", "student", "alumni"]
     parser = argparse.ArgumentParser()
@@ -51,11 +47,10 @@ def parse_arguments():
 def main():
     args = parse_arguments()
     template = get_template(args.template)
-    names = rootedlistdir(args.directory)
-    yamls = [loadyaml(name) for name in names]
-    sortedyamls = (yml for role in args.roles
-                   for yml in filter(yaml_filter(role), yamls))
-    rendered = (template.render(person=yml) for yml in sortedyamls)
+    rendered = (template.render(person=loadyaml(name), role=role)
+                for role in args.roles
+                for name in rootedlistdir(os.path.join(args.directory, role))
+                if os.path.splitext(name)[-1].lower() == ".yaml")
 
     print("\n".join(rendered), file=args.output)
 
