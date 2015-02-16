@@ -1,6 +1,11 @@
 <div id="{{person.handle}}" class="{{person.role|default('student')}}">
 	<img width="60px" height="60px" src="http://gravatar.com/avatar/{{person.email|md5sum}}?s=60" />
-	<strong>Name</strong>: {{person.name}}
+	<strong>Name</strong>:&nbsp;
+	{%- if person.blog is defined -%}
+		<a target="_blank" href="{{person.blog}}">{{person.name}}</a>
+	{%- else -%}
+		{{person.name}}
+	{%- endif %}
 	<strong>Major/Year</strong>: {{person.major}}
 	<strong>IRC Handle</strong>: {{person.handle}}
 	<strong>Code Forges</strong>:
