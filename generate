@@ -1,8 +1,8 @@
 #!/bin/env python
 from __future__ import print_function
+from __future__ import absolute_import
 import argparse
 import hashlib
-from itertools import ifilter
 from jinja2 import Environment, FileSystemLoader
 import os
 import yaml
@@ -15,7 +15,7 @@ def get_template(name):
         assert len(bio) <= 140, "Biography is too long"
         return bio
 
-    env.filters['md5sum'] = lambda value: hashlib.md5(value).hexdigest()
+    env.filters['md5sum'] = lambda value: hashlib.md5(value.encode('utf-8')).hexdigest()
     env.filters['testbio'] = testbio
 
     return env.get_template(name)
