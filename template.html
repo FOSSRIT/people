@@ -9,10 +9,12 @@
 	<strong>Major/Year</strong>: {{person.major}}
 	<strong>IRC Handle</strong>: {{person.handle}}
 	<strong>Code Forges</strong>:
+    {%- if person.forges %}
 	<ul>
 		{%- for name, url in person.forges|dictsort %}
 		<li><a target="_blank" href="{{url}}">{{name}}</a></li>
 		{%- endfor %}
 	</ul>
+    {%- endif %}
 	<blockquote>{{person.bio|default('')|testbio|escape}}</blockquote>
 </div>
