@@ -6,8 +6,9 @@
 	{%- else -%}
 		{{person.name}}
 	{%- endif %}
-	<strong>Major/Year</strong>: {{person.major}}
-	<strong>IRC Handle</strong>: {{person.handle}}
+    <strong>Major/Year</strong>: {{person.major}} ({{person.graduation}})
+    <strong>Company</strong>: {{person.company}} 
+	<strong>Username</strong>: {{person.handle}}
 	<strong>Code Forges</strong>:
     {%- if person.forges %}
 	<ul>
