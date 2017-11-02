@@ -31,7 +31,7 @@ def loadyaml(name):
 
 
 def parse_arguments():
-    ROLES = ["captain", "faculty", "student", "alumni", "mentor"]
+    ROLES = ["captain", "faculty", "student", "alum", "mentor"]
     parser = argparse.ArgumentParser()
     parser.add_argument('--template', '-t', default='template.html',
                         help='Jinja template to use')

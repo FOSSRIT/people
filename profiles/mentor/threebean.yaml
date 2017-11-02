@@ -1,8 +1,10 @@
+---
 name: Ralph Bean
 blog: http://threebean.org
 email: ralph@fedoraproject.org
 major: Computer Science
 handle: threebean
+company: Red Hat, Inc.
 forges:
     GitHub: https://github.com/ralphbean
     BitBucket: https://bitbucket.org/ralphbean
