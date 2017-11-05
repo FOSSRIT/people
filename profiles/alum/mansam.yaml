@@ -1,3 +1,4 @@
+---
 name: Sam Lucidi
 blog: http://www.samlucidi.com/
 email: sam@samlucidi.com
@@ -5,4 +6,5 @@ major: Software Engineering
 handle: mansam
 forges:
   GitHub: https://github.com/mansam
-bio: I hack on web services all around the stack. Ask me about Python, AWS, software design and architecture, etc. 
+bio: I hack on web services all around the stack. Ask me about Python, AWS,
+     software design and architecture, etc.

@@ -1,7 +1,9 @@
 name: First Last
 blog: https://mysite.com
 email: myemail@rit.edu
-major: Computer Science 2025
+major: Computer Science
+graduation: 2015
+company: FOSS Company, Inc.
 handle: myusername
 forges:
     GitHub: https://github.com/myusername
