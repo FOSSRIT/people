@@ -1,9 +1,12 @@
+---
 name: Wilfried Hounyo
 blog: http://blog.wilfriedE.me/
 email: wilfried.hounyo@gmail.com
-major: Computer Science 2019
+major: Computer Science
+graduation: 2019
 handle: wilfriedE
 forges:
     GitHub: https://github.com/wilfriedE
     BitBucket: https://bitbucket.org/wilfriedE
-bio: I enjoy having new experiences, learning new things, working on cool things and meeting new people.
+bio: I enjoy having new experiences, learning new things, working on cool things
+     and meeting new people.
