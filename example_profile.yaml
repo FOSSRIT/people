@@ -1,9 +1,11 @@
+---
 name: First Last
-blog: https://mysite.com
+website: https://mysite.com
+blog: https://blog.mysite.com
 email: myemail@rit.edu
 major: Computer Science
 graduation: 2015
-company: FOSS Company, Inc.
+employer: FOSS Company, Inc.
 handle: myusername
 forges:
     GitHub: https://github.com/myusername
