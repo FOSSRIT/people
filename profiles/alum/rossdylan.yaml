@@ -1,10 +1,11 @@
 ---
 name: Ross Delinger
-blog: http://helixoide.com
-email: rossdylan@csh.rit.edu
+blog: http://rossdylan.club
+email: rossdylan@fastmail.com
 major: Computer Science
 graduation: 2016
+employer: Site Reliability Engineer, Dropbox Inc.
 handle: rossdylan
 forges:
   GitHub: https://github.com/rossdylan
-bio: Distributed Systems, C, Python, DevOps.I make awesome happen
+bio: Distributed Systems, C, Python, DevOps
