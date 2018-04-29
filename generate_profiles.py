@@ -15,7 +15,10 @@ def get_template(name):
         assert len(bio) <= 140, "Biography is too long"
         return bio
 
-    env.filters['md5sum'] = lambda value: hashlib.md5(value.encode('utf-8')).hexdigest()
+    def md5sum(value):
+        return hashlib.md5(value.encode('utf-8')).hexdigest()
+
+    env.filters['md5sum'] = md5sum
     env.filters['testbio'] = testbio
 
     return env.get_template(name)
@@ -53,6 +56,7 @@ def main():
                 if os.path.splitext(name)[-1].lower() == ".yaml")
 
     print("\n".join(rendered), file=args.output)
+
 
 if __name__ == '__main__':
     main()
