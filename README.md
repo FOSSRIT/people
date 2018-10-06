@@ -1,13 +1,15 @@
-StudentProfiles [![Build Status](https://travis-ci.org/FOSSRIT/FOSSProfiles.svg?branch=master)](https://travis-ci.org/FOSSRIT/FOSSProfiles)
-===============
+foss-profiles
+=============
 
-HTML generator to create a page for FOSS@MAGIC profiles from YAML files
+[![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+[![Build Status](https://travis-ci.org/FOSSRIT/foss-profiles.svg?branch=master)](https://travis-ci.org/FOSSRIT/foss-profiles)
+
+HTML page generator for FOSS@MAGIC student, faculty, and alum profiles from YAML files
 
 
 ## About
 
-StudentProfiles helps [FOSS@MAGIC](http://foss.rit.edu "Free and Open Source
-Software at RIT") faculty and staff maintain a current roster of:
+foss-profiles helps [FOSS@MAGIC](http://foss.rit.edu "Free and Open Source Software at RIT") faculty and staff maintain a current roster of:
 
 * Alums
 * Faculty
@@ -15,23 +17,26 @@ Software at RIT") faculty and staff maintain a current roster of:
 * Students
 * Student captains
 
-The profiles are used for record-keeping or for other purposes, like alum or
-student profiles on the [FOSS@MAGIC website](http://foss.rit.edu "Free and Open
-Source Software at RIT").
+The profiles are used for record-keeping and contact information.
+They are also planned to eventually appear on the reworked [FOSS@MAGIC website](http://foss.rit.edu "Free and Open Source Software at RIT").
 
 
-## Requirements
+## Installation
 
-To generate profiles, you need the following packages.
+foss-profiles uses [pipenv](https://pipenv.readthedocs.io/en/latest/) to manage dependencies.
+Read their docs for installation help.
 
-* `python3`
-* `python3-jinja2`
-* `python3-PyYAML`
+Once pipenv is installed, run these commands to initialize your development environment:
+
+```bash
+pipenv sync --dev
+pipenv shell
+```
 
 
 ## Usage
 
-```sh
+```bash
 usage: generate_profiles.py [-h] [--template TEMPLATE]
                             [--roles ROLES [ROLES ...]] [--output OUTPUT]
                             directory
@@ -49,26 +54,25 @@ optional arguments:
                         Output filename
 ```
 
+
 ## Contributing
 
-If you want to contribute a profile, see our contributing guidelines.
+Want to contribute a profile?
+See our [contributing guidelines](https://github.com/FOSSRIT/foss-profiles/blob/master/.github/CONTRIBUTING.md "How to contribute a new FOSS profile").
 
-If you want to help with the actual project, awesome! We'd love any help to make
-the template prettier or anything that you think should be changed. Python 3.6
-is recommended for your development environment, along with using
-[Python virtual environments](https://stackoverflow.com/a/30233408/2497452). 
+If you want to help with the actual project, awesome!
+Help is welcome to make the template prettier or anything you think could be improved.
+Note foss-profiles is a **Python 3.6** project.
 
-Need help? Join `#rit-foss` on the Freenode IRC network or join the bridged
-Telegram group.
+Need help?
+Join `#rit-foss` on the Freenode IRC network or join the bridged Telegram group.
 
-* [IRC web chat](https://webchat.freenode.net/?channels=rit-foss "FOSS @ RIT
-  community on Freenode IRC")
+* [IRC web chat](https://webchat.freenode.net/?channels=rit-foss "FOSS @ RIT community on Freenode IRC")
 * [Telegram](https://t.me/fossrit "FOSS @ RIT community on Telegram")
 
 
 ## Legal
 
-All work in this repo is licensed under the
-[GPLv3
-license](https://github.com/FOSSRIT/FOSSProfiles/blob/master/LICENSE.txt).
+[![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
+All work licensed under the [GPLv3 license](https://github.com/FOSSRIT/foss-profiles/blob/master/LICENSE.txt).
