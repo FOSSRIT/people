@@ -15,7 +15,6 @@ foss-profiles helps [FOSS@MAGIC](http://foss.rit.edu "Free and Open Source Softw
 * Faculty
 * Mentors
 * Students
-* Student captains
 
 The profiles are used for record-keeping and contact information.
 They are also planned to eventually appear on the reworked [FOSS@MAGIC website](http://foss.rit.edu "Free and Open Source Software at RIT").
