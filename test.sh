@@ -1,25 +1,26 @@
-#!/bin/bash
+#!/usr/bin/bash
 #
-# Development testing script to verify that current changes to the code still
-# validate and work successfully.
+# Script:       test.sh
+# Authored by:  Justin W. Flory
+# License:      GPLv3
+#
+# Test script to verify and successfully validate changes to existing code
 #
 
-AUTHOR="Justin W. Flory (jflory7)"
+# yamllint required for tests
+command -v yamllint
+if [ $? -eq 1 ]; then
+    logger -s -p user.err 'fossprofiles: yamllint not found. Install yamllint via Pipenv or pip.'
+    exit 127
+fi
 
-test_valid_yaml_syntax () {
-    if [ ! -f $(which yamllint) ]; then
-        echo -e "yamllint not installed, exiting…"
-        exit
-    fi
+# check YAML files for correct syntax
+yamllint -s profiles/
+if [ $? -eq 1 ]; then
+    logger -p user.err 'fossprofiles: yamllint tests failed. Run yamllint for detailed info.'
+    exit 1
+fi
 
-    yamllint -s profiles/
-}
-
-test_build_html () {
-    python3 generate_profiles.py -t template.html -o index.html profiles/
-    echo -e "HTML successfully generated."
-}
-
-test_valid_yaml_syntax
-test_build_html
-
+# build actual profiles
+python3 generate_profiles.py -t template.html -o index.html profiles/
+logger -s -p user.info 'fossprofiles: HTML successfully generated.'
