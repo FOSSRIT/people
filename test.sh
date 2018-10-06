@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/bin/bash
 #
 # Script:       test.sh
 # Authored by:  Justin W. Flory
@@ -23,4 +23,4 @@ fi
 
 # build actual profiles
 python3 generate_profiles.py -t template.html -o index.html profiles/
-logger -s -p user.info 'fossprofiles: HTML successfully generated.'
+logger -p user.info 'fossprofiles: HTML successfully generated.'
