@@ -5,7 +5,7 @@ name = "pypi"
 
 [packages]
 "Jinja2" = "*"
-PyYAML = "*"
+pyyaml = ">=4.2b4"
 
 [dev-packages]
 ipython = "*"
