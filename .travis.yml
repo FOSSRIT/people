@@ -1,8 +1,17 @@
 ---
 language: python
-python:
-  - '3.6'
+python: "3.6"
 install:
-  - 'pip install pipenv'
-  - 'pipenv sync -d'
+  - "pip install pipenv"
+  - "pipenv sync -d"
 script: ./test.sh
+
+notifications:
+  irc:
+    channels:
+      - "ircs://chat.freenode.net:6697/#rit-foss"
+      - "ircs://chat.freenode.net:6697/#rit-foss-admin"
+    template:
+      - "[%{repository_name}:%{branch}@%{commit} - build #%{build_number}] CI %{result}! (%{build_url})"
+    on_success: change
+    on_failure: always
