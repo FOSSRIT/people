@@ -5,11 +5,11 @@ name = "pypi"
 
 [packages]
 "Jinja2" = "*"
-pyyaml = ">=4.2b4"
+pyyaml = "*"
 
 [dev-packages]
 ipython = "*"
 yamllint = "*"
 
 [requires]
-python_version = "3.6"
+python_version = "3.7"
