@@ -15,7 +15,7 @@ if [ $? -eq 1 ]; then
 fi
 
 # check YAML files for correct syntax
-yamllint -s profiles/
+yamllint -c .yamllintrc -s profiles/
 if [ $? -eq 1 ]; then
     logger -p user.err 'fossprofiles: yamllint tests failed. Run yamllint for detailed info.'
     exit 1
