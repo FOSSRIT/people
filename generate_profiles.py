@@ -27,7 +27,7 @@ def rootedlistdir(pth):
 
 def loadyaml(name):
     with open(name) as inf:
-        return yaml.load(inf)
+        return yaml.load(inf, Loader=yaml.FullLoader)
 
 
 def parse_arguments():
