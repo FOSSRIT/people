@@ -33,4 +33,7 @@ social_links:
 minima:
   skin: solarized-dark
 header_pages:
+  - faculty.html
+  - student.html
+  - mentor.html
   - alum.html
