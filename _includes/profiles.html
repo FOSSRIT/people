@@ -1,0 +1,52 @@
+{% assign page_category = (include.content | remove: ".html") %}
+<div class="profile_list">
+    {% for category_pair in site.data %}
+        {% assign category_key = (category_pair[0] | downcase ) %}
+        {% assign category_value = category_pair[1] %}
+        {% if page_category != "index" and category_key != page_category%}
+            {% continue %}
+        {% endif %}
+        {% if page.title %}
+        {% else %}
+            <h1>{{ category_key | capitalize }}</h1>
+        {% endif %}
+
+        <div class="category"> 
+            {% for person_key_pair in category_value %}
+                {% assign person = person_key_pair[1] %}
+                <div class="person">
+                    <h3>
+                    {% if person.blog %}
+                    <a target="_blank" href="{{person.blog}}">{{ person.name }}</a>
+                    {% else %}
+                    {{ person.name }}        
+                    {% endif %}   
+                    </h3> 
+                    {% if person.bio %}
+                    <blockquote>{{ person.bio | truncate: 140, '...'}}</blockquote>
+                    {% endif %}
+                    <ul>
+                        
+                        <li><strong>Major/Year</strong>: {{person.major}} {% if person.graduation %}({{person.graduation}}){% endif %}</li>
+                        {% if person.company %}
+                        <li><strong>Company</strong>: {{person.company}} </li>
+                        {% endif %}
+                        <li><strong>Username</strong>: {{person.handle}}</li>
+                        {% if person.forges %}
+                        <li>
+                            <strong>Code Forges</strong>:
+                            <ul class="social-media-list">
+                                {% for forges_pair in person.forges %}
+                                    {% assign forge_key = forges_pair[0] | downcase %}
+                                    {% assign forge_value = forges_pair[1] %}
+                                    <li><a target="_blank" href="{{forge_value}}">{{ forge_key | capitalize }}</a></li>
+                                {% endfor %}
+                            </ul>
+                        </li>
+                        {% endif %}
+                    </ul>
+                </div>
+            {% endfor %}
+        </div>
+    {% endfor %}
+</div>

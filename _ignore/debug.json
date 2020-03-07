@@ -1,0 +1,485 @@
+{
+  "alum": {
+    "ajman1101": {
+      "name": "Andrew Mandula",
+      "blog": "http://www.andrewmandula.com",
+      "email": "ajman@csh.rit.edu",
+      "major": "Game Design and Development",
+      "graduation": 2015,
+      "handle": "ajman1101",
+      "forges": { "GitHub": "http://github.com/ajman1101" },
+      "bio": "I am a Coloradian at Rochester Institutue of Technology recieving a Bachelor of Science in Game Design & Development graduating May 2015."
+    },
+    "amm4108": {
+      "name": "Alex Mack",
+      "blog": "http://alexandriamack.com",
+      "email": "amm4108@g.rit.edu",
+      "major": "Game Design and Development",
+      "graduation": 2015,
+      "handle": "amm4108",
+      "forges": { "GitHub": "http://github.com/amm4108" },
+      "bio": "I love making and playing video games."
+    },
+    "awmusic12635": {
+      "name": "Alex Wacker",
+      "email": "alex@alexwacker.com",
+      "major": "Information Technology, Networking And Systems Administration",
+      "graduation": 2017,
+      "employer": "Indeed.com",
+      "handle": "awmusic12635",
+      "forges": { "GitHub": "https://github.com/Awmusic12635" },
+      "bio": "Hosting your bits and bytes"
+    },
+    "beWhitty": {
+      "name": "Brendan Whitfield",
+      "blog": "http://brendan-w.com/",
+      "email": "me@brendan-w.com",
+      "major": "New Media Interactive Development",
+      "graduation": 2016,
+      "handle": "beWhitty",
+      "forges": { "GitHub": "https://github.com/brendan-w" },
+      "bio": "Doing fun things with lights and computers since 2006."
+    },
+    "friss": {
+      "name": "Zach Friss",
+      "blog": "https://justdev.in",
+      "email": "foss@friss.me",
+      "major": "Computer Science",
+      "graduation": 2016,
+      "handle": "Friss",
+      "employer": "HubSpot",
+      "forges": { "GitHub": "https://github.com/friss" },
+      "bio": "I enjoy building all things web related. And lacrosse."
+    },
+    "ianbgilbert": {
+      "name": "Ian Gilbert",
+      "blog": "n-g.biz",
+      "email": "ianbgilbert@gmail.com",
+      "major": "Computing Security",
+      "graduation": 2017,
+      "handle": "swagmaster420",
+      "forges": { "GitHub": "https://github.com/ianbgilbert" },
+      "bio": "I fix computers"
+    },
+    "jibby": {
+      "name": "Josh Bicking",
+      "website": "https://jibby.org",
+      "blog": "https://jibby.org",
+      "email": "joshbicking@comcast.net",
+      "major": "Computer Science",
+      "graduation": 2019,
+      "handle": "jibby",
+      "forges": {
+        "GitHub": "https://github.com/jibby0/",
+        "Gogs": "https://gogs.jibby.org/jhb2345"
+      },
+      "bio": "Language nut, sysprog nut, netsec nut, fitness nut. In general, a nut."
+    },
+    "loothelion": {
+      "name": "Liam Middlebrook",
+      "blog": "http://liam-middlebrook.github.io/blog",
+      "email": "liammiddlebrook@gmail.com",
+      "major": "Game Development",
+      "graduation": 2017,
+      "handle": "loothelion",
+      "forges": {
+        "GitHub": "https://github.com/liam-middlebrook",
+        "BitBucket": "http://bitbucket.org/liam-middlebrook"
+      },
+      "bio": "I like working on cool software projects that are close to the hardware."
+    },
+    "mansam": {
+      "name": "Sam Lucidi",
+      "blog": "http://www.samlucidi.com/",
+      "email": "sam@samlucidi.com",
+      "major": "Software Engineering",
+      "handle": "mansam",
+      "forges": { "GitHub": "https://github.com/mansam" },
+      "bio": "I hack on web services all around the stack. Ask me about Python, AWS, software design and architecture, etc."
+    },
+    "msoucy": {
+      "name": "Matt Soucy",
+      "blog": "http://msoucy.me",
+      "email": "msoucy@csh.rit.edu",
+      "major": "Computer Science",
+      "graduation": 2016,
+      "employer": "BAE Systems",
+      "handle": "msoucy",
+      "forges": {
+        "GitHub": "http://github.com/msoucy",
+        "BitBucket": "http://bitbucket.org/msoucy",
+        "Personal": "http://code.msoucy.me"
+      },
+      "bio": "Former captain of the FOSSBox, works on protocol and backend development"
+    },
+    "nikkonikko": {
+      "name": "Nikko Williard",
+      "email": "nikko.williard@gmail.com",
+      "major": "Computing Security",
+      "graduation": 2017,
+      "handle": "nikkonikko",
+      "forges": { "GitHub": "https://github.com/themidnightowl" },
+      "bio": "Securing your private bits over the Internet."
+    },
+    "nolski": {
+      "name": "Mike Nolan",
+      "blog": "http://nolski.rocks",
+      "email": "me@nolski.rocks",
+      "major": "New Media ID",
+      "graduation": 2015,
+      "handle": "Nolski",
+      "employer": "Giphy, Inc.",
+      "forges": { "GitHub": "https://github.com/nolski" },
+      "bio": "Truth seeking newsman with a passion for freedom."
+    },
+    "pickledchicken": {
+      "name": "Changbai Li",
+      "website": "http://changbai.li",
+      "blog": "http://changbaili.blogspot.com",
+      "email": "lcb931023@gmail.com",
+      "major": "New Media ID",
+      "graduation": 2015,
+      "employer": "Web Developer, Helios Interactive",
+      "handle": "Pickledchicken",
+      "forges": { "GitHub": "http://github.com/lcb931023" },
+      "bio": "Makes fun websites, games, and toys."
+    },
+    "rossdylan": {
+      "name": "Ross Delinger",
+      "blog": "http://rossdylan.club",
+      "email": "rossdylan@fastmail.com",
+      "major": "Computer Science",
+      "graduation": 2016,
+      "employer": "Site Reliability Engineer, Dropbox Inc.",
+      "handle": "rossdylan",
+      "forges": { "GitHub": "https://github.com/rossdylan" },
+      "bio": "Distributed Systems, C, Python, DevOps"
+    },
+    "rostepher": {
+      "name": "Ross Bayer",
+      "email": "rostepher@csh.rit.edu",
+      "major": "Computer Science",
+      "graduation": 2017,
+      "handle": "rostepher",
+      "forges": {
+        "GitHub": "https://github.com/Rostepher",
+        "BitBucket": "https://bitbucket.org/Rostepher"
+      },
+      "bio": "Programming languages are my thing, ask me about Rust!"
+    },
+    "ryansb": {
+      "name": "Ryan Brown",
+      "blog": "http://rsb.io",
+      "email": "ryansb@redhat.com",
+      "major": "Applied Networking & Systems Administration, minor Software Engineering",
+      "handle": "ryansb",
+      "employer": "Ansible, Red Hat, Inc.",
+      "forges": { "GitHub": "https://github.com/ryansb" },
+      "bio": "I build automation tools and have done a bit of everything. Ask me about OpenStack, AWS, or DevOps tools."
+    },
+    "serubin": {
+      "name": "Solomon Rubin",
+      "blog": "https://serubin.net",
+      "email": "ser8813@rit.edu",
+      "major": "Computer Science",
+      "graduation": 2019,
+      "handle": "Serubin",
+      "employer": "MITRE Corporation",
+      "forges": {
+        "GitHub": "https://github.com/Serubin",
+        "Personal": "https://git.serubin.net"
+      },
+      "bio": "Active FOSS developer, linux user, and power user."
+    },
+    "thenaterhood": {
+      "name": "Nate Levesque",
+      "website": "https://www.thenaterhood.com",
+      "blog": "https://www.thenaterhood.com/blog",
+      "email": "ngl3477@rit.edu",
+      "major": "Software Engineering",
+      "graduation": 2016,
+      "employer": "Datto",
+      "handle": "thenaterhood",
+      "forges": {
+        "GitHub": "https://github.com/thenaterhood",
+        "GitLab": "https://gitlab.com/thenaterhood"
+      },
+      "bio": "What an LGBTQ+ engineer looks like. FOSS contributor, digital rights advct."
+    },
+    "xforever1313": {
+      "name": "Seth Hendrick",
+      "website": "https://shendrick.net/",
+      "email": "seth@shendrick.net",
+      "major": "Computer Engineering",
+      "graduation": 2014,
+      "handle": "xforever1313",
+      "employer": "Harris Corporation",
+      "forges": {
+        "GitHub": "https://github.com/xforever1313",
+        "BitBucket": "https://bitbucket.org/xforever1313/",
+        "GitLab": "https://gitlab.com/xforever1313"
+      },
+      "bio": "I break things with software!"
+    },
+    "ziky": {
+      "name": "Kennedy Kong",
+      "website": "https://kennedy.sh/",
+      "email": "foss@kennedy.imap.cc",
+      "major": "Computer Engineering",
+      "graduation": 2013,
+      "handle": "ziky",
+      "employer": "CloudCheckr",
+      "forges": { "GitHub": "https://github.com/kennedy" },
+      "bio": "I like doing random things with python"
+    },
+    "axk4545": {
+      "name": "Aidan Kahrs",
+      "website": "https://axk4545.me",
+      "blog": "https://axk4545.me",
+      "email": "public@axk4545.me",
+      "major": "Networking and Systems Administration",
+      "graduation": 2018,
+      "handle": "axk4545",
+      "forges": {
+        "GitHub": "https://github.com/axk4545/",
+        "GitLab": "https://gitlab.com/axk4545/"
+      },
+      "bio": "Sysadmin with a passion for Linux and FOSS. Linux user since 2012. Fedoran."
+    }
+  },
+  "faculty": {
+    "deejoe": {
+      "name": "D. Joe",
+      "blog": "http://people.rit.edu/deejoe/planet/hfoss",
+      "email": "deejoe@mail.rit.edu",
+      "major": "Chemistry",
+      "handle": "dzho / deejoe",
+      "forges": {
+        "GitHub": "https://github.com/ritjoe",
+        "GitHub2": "https://github.com/deejoe"
+      },
+      "bio": "Adjunct Faculty, School of Interactive Games & Media."
+    },
+    "ritsteve": {
+      "name": "Stephen Jacobs",
+      "blog": "https://www.rit.edu/gccis/stephen-jacobs",
+      "email": "sj@magic.rit.edu",
+      "major": "N/A",
+      "handle": "RITSteve",
+      "bio": "Professor, School of Interactive Games & Media; Research Affiliate, RIT MAGIC Center"
+    }
+  },
+  "mentor": {
+    "callahad": {
+      "name": "Dan Callahan",
+      "blog": "http://dancallahan.info",
+      "email": "dan.callahan@gmail.com",
+      "major": "Geology",
+      "handle": "callahad",
+      "employer": "Mozilla Corporation",
+      "forges": { "GitHub": "https://github.com/callahad" },
+      "bio": "Mozillian, F/OSS pragmatist and/or curmudgeon."
+    },
+    "decause": {
+      "name": "Remy DeCausemaker",
+      "blog": "http://opensource.com/users/remyd",
+      "email": "remyd@civx.us",
+      "major": "Multi-Discipinary Studies - Communications & Media Technnology, Public Policy",
+      "handle": "decause",
+      "employer": "Twitter, Inc.",
+      "forges": { "GitHub": "https://github.com/decause" },
+      "bio": "Defender of the Digital Realm, Gunslinger on the Electronic Frontier. I wear the suit so the hackers don't have to."
+    },
+    "threebean": {
+      "name": "Ralph Bean",
+      "blog": "http://threebean.org",
+      "email": "ralph@fedoraproject.org",
+      "major": "Computer Science",
+      "handle": "threebean",
+      "employer": "Red Hat, Inc.",
+      "forges": {
+        "GitHub": "https://github.com/ralphbean",
+        "BitBucket": "https://bitbucket.org/ralphbean"
+      },
+      "bio": "Python hacker and marxist"
+    }
+  },
+  "student": {
+    "astronautsloth": {
+      "name": "Colin Thompson",
+      "email": "cjt1871@g.rit.edu",
+      "major": "Computer Science",
+      "graduation": 2019,
+      "handle": "AstronautSloth",
+      "forges": { "GitHub": "https://github.com/AstronautSloth" },
+      "bio": "I'm a computer science student who is interested in hackathons and open source culture."
+    },
+    "coldsauce": {
+      "name": "Stefan Aleksic",
+      "blog": "lambdacoldsauce.wordpress.com",
+      "email": "stefan@stefanaleksic.com",
+      "major": "Computer Science",
+      "graduation": 2019,
+      "handle": "coldsauce",
+      "forges": { "GitHub": "https://github.com/coldsauce" },
+      "bio": "I like hackathons and making cool stuff."
+    },
+    "ctmartin": {
+      "name": "Christian Martin",
+      "blog": "https://blog.ctmartin.me/",
+      "email": "ctm2142@rit.edu",
+      "major": "New Media Interactive Development",
+      "graduation": 2020,
+      "handle": "ctmartin",
+      "forges": { "GitHub": "https://github.com/ct-martin" },
+      "bio": "Also RITlug member"
+    },
+    "dwarchak": {
+      "name": "Dylan Warchak",
+      "website": "https://d.ylan.sh",
+      "email": "djw1174@rit.edu",
+      "major": "Computing Security",
+      "graduation": 2024,
+      "handle": "srclord",
+      "forges": { "GitHub": "https://github.com/warchak" },
+      "bio": "Programmer of things, crafter of sounds."
+    },
+    "effendiian": {
+      "name": "Ian Effendi",
+      "website": "https://rimij405.github.io/",
+      "blog": "https://rimij405.github.io/categories/blog/",
+      "email": "effendiian@gmail.com",
+      "major": "Game Design & Development",
+      "graduation": 2020,
+      "handle": "iae2784",
+      "forges": { "GitHub": "https://www.github.com/rimij405" },
+      "bio": "Former president of RIT Global Union."
+    },
+    "jflory7": {
+      "name": "Justin W. Flory",
+      "blog": "https://justinwflory.com",
+      "email": "jflory7@gmail.com",
+      "major": "Networking & Systems Administration",
+      "graduation": 2019,
+      "handle": "jwf",
+      "employer": "Rochester Institute of Technology",
+      "forges": {
+        "GitHub": "https://github.com/jflory7",
+        "BitBucket": "https://bitbucket.org/jflory7"
+      },
+      "bio": "Keeping the FOSS flag high since 2011."
+    },
+    "jrtechs": {
+      "name": "Jeffery Russell",
+      "website": "https://jrtechs.me",
+      "blog": "https://jrtechs.net",
+      "email": "jeffery@jrtechs.net",
+      "major": "Computer Science",
+      "graduation": "2020/2021",
+      "employer": "CUBRC",
+      "handle": "JRtechs",
+      "forges": { "GitHub": "https://github.com/jrtechs" },
+      "bio": "RIT CS Student, @RITlug President, FOSS member, blogger, ML researcher, programmer. I enjoy tea, running, and photography."
+    },
+    "kevinAssogba": {
+      "name": "Kevin Assogba",
+      "email": "kevinassogba@mail.com",
+      "major": "Computer Science",
+      "graduation": 2020,
+      "handle": "10eMyrT",
+      "employer": "Rochester Institute of Technology",
+      "forges": {
+        "GitHub": "https://github.com/10eMyrT",
+        "GitLab": "https://gitlab.com/10eMyrT"
+      },
+      "bio": "FOSS everywhere for a better world!"
+    },
+    "nlmeminger": {
+      "name": "Nathaniel E. Larrimore",
+      "website": "nathaniellarrimore.com",
+      "email": "nel5754@rit.edu",
+      "major": "Networking & Systems Administration",
+      "graduation": 2019,
+      "handle": "nlMeminger",
+      "forges": { "GitHub": "https://github.com/nlMeminger" },
+      "bio": "May all your hosts be in the same subnet."
+    },
+    "piedoom": {
+      "name": "Alexander Loz",
+      "blog": "senntenial.com",
+      "email": "alexloz@comcast.net",
+      "major": "New Media Design",
+      "graduation": 2019,
+      "handle": "piedoom / doomy",
+      "forges": { "GitHub": "https://github.com/piedoom" },
+      "bio": "I like ruby and memes."
+    },
+    "susan": {
+      "name": "Susan Lunn",
+      "blog": "http://emollient.me/",
+      "email": "slunn@csh.rit.edu",
+      "major": "Computer Science",
+      "graduation": 2018,
+      "handle": "susan",
+      "forges": { "GitHub": "https://github.com/emollient" },
+      "bio": "Systems programming and DevOps are my jam. Women in chapooters."
+    },
+    "tjzabel": {
+      "name": "Tim Zabel",
+      "website": "timzabel.com",
+      "email": "tjz8659@rit.edu",
+      "graduation": 2021,
+      "handle": "Tjzabel",
+      "forges": { "GitHub": "https://github.com/Tjzabel" },
+      "bio": "RITlug member."
+    },
+    "voidwhisperer": {
+      "name": "Christopher R Bitler",
+      "blog": "https://medium.com/@crb2547",
+      "email": "crb2547@rit.edu",
+      "major": "Computer Science",
+      "graduation": 2020,
+      "handle": "VoidWhisperer",
+      "forges": { "GitHub": "https://github.com/Chris-Bitler/" },
+      "bio": "I am a programmer, I have been for about 7 years now (as of 2016). I was introduced to FOSS by jflory7."
+    },
+    "whenbellstoll": {
+      "name": "Kent Reese",
+      "website": "http://kentr.itch.io/",
+      "email": "kentreese64@gmail.com",
+      "major": "Game Design and Development",
+      "graduation": 2021,
+      "handle": "whenbellstoll",
+      "forges": {
+        "GitHub": "https://github.com/whenbellstoll",
+        "BitBucket": "https://bitbucket.org/kxr6031/"
+      },
+      "bio": "I'm a designer and programmer of tasty homecrafted video games."
+    },
+    "wilfriedE": {
+      "name": "Wilfried Hounyo",
+      "blog": "http://blog.wilfriedE.me/",
+      "email": "wilfried.hounyo@gmail.com",
+      "major": "Computer Science",
+      "graduation": 2019,
+      "handle": "wilfriedE",
+      "forges": {
+        "GitHub": "https://github.com/wilfriedE",
+        "BitBucket": "https://bitbucket.org/wilfriedE"
+      },
+      "bio": "I enjoy having new experiences, learning new things, working on cool things and meeting new people."
+    },
+    "zethra": {
+      "name": "Ben Goldberg",
+      "website": "bengoldberg.info",
+      "email": "benaagoldberg@gmail.com",
+      "graduation": 2021,
+      "handle": "zethra",
+      "forges": {
+        "GitHub": "https://github.com/zethra",
+        "GitLab": "https://gitlab.com/zethra"
+      },
+      "bio": "I ♥ Linux & Rust"
+    }
+  }
+}

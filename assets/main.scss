@@ -1,0 +1,16 @@
+---
+---
+@import "minima";
+
+div.category{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+div.person {
+    width: 300px;
+    display: inline-block;
+    flex-grow: 1;
+    margin: 10px;
+}
