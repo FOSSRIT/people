@@ -7,7 +7,7 @@ graduation: 2016
 employer: BAE Systems
 handle: msoucy
 forges:
-    GitHub: msoucy
-    BitBucket: http://bitbucket.org/msoucy
+    Github: https://github.com/msoucy
+    BitBucket: https://bitbucket.org/msoucy
     Personal: http://code.msoucy.me
 bio: Former captain of the FOSSBox, works on protocol and backend development
