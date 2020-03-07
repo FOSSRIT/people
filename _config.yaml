@@ -26,9 +26,10 @@ plugins:
   - jekyll-relative-links
 
 title: FOSS@MAGIC Profiles
+author: RIT
+email: foss@rit.edu
 description: The profiles are used for record-keeping and contact information
-social_links:
-  github:  FOSSRIT
+github_username:  FOSSRIT
 
 minima:
   skin: solarized-dark
