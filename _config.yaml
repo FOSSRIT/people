@@ -13,6 +13,7 @@ exclude:
   - Gemfile.lock
   - README.md
   - example_profile.yaml
+  - LICENSE.txt
 
 repository: FOSSRIT/foss-profiles
 theme: minima
