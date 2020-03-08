@@ -11,6 +11,8 @@ exclude:
   - _ignore
   - Gemfile
   - Gemfile.lock
+  - README.md
+  - example_profile.yaml
 
 repository: FOSSRIT/foss-profiles
 theme: minima
