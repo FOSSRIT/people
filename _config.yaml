@@ -31,8 +31,6 @@ email: foss@rit.edu
 description: The profiles are used for record-keeping and contact information
 github_username:  FOSSRIT
 
-minima:
-  skin: solarized-dark
 header_pages:
   - faculty.html
   - student.html
