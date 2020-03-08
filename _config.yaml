@@ -1,0 +1,38 @@
+lsi: false
+safe: true
+incremental: false
+highlighter: rouge
+gist:
+  noscript: false
+kramdown:
+  math_engine: mathjax
+  syntax_highlighter: rouge
+exclude: 
+  - _ignore
+  - Gemfile
+  - Gemfile.lock
+
+repository: FOSSRIT/foss-profiles
+theme: minima
+plugins:
+  - jekyll-coffeescript
+  - jekyll-default-layout
+  - jekyll-gist
+  - jekyll-github-metadata
+  - jekyll-optional-front-matter
+  - jekyll-paginate
+  - jekyll-readme-index
+  - jekyll-titles-from-headings
+  - jekyll-relative-links
+
+title: FOSS@MAGIC Profiles
+author: RIT
+email: foss@rit.edu
+description: The profiles are used for record-keeping and contact information
+github_username:  FOSSRIT
+
+header_pages:
+  - faculty.html
+  - student.html
+  - mentor.html
+  - alum.html
