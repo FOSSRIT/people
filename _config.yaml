@@ -1,3 +1,23 @@
+---
+###############################################################################
+#                                                                             #
+#                            WEBSITE CONFIGURATION                            #
+#                                                                             #
+###############################################################################
+
+
+# --- base website settings ---
+
+title: FOSS@RIT Profiles
+repository: FOSSRIT/people
+author: RIT
+email: foss@rit.edu
+description: Interactive directory of FOSS@RIT community members
+github_username: FOSSRIT
+
+
+# --- general settings ---
+
 lsi: false
 safe: true
 incremental: false
@@ -7,16 +27,6 @@ gist:
 kramdown:
   math_engine: mathjax
   syntax_highlighter: rouge
-exclude: 
-  - _ignore
-  - Gemfile
-  - Gemfile.lock
-  - README.md
-  - example_profile.yaml
-  - LICENSE.txt
-
-repository: FOSSRIT/foss-profiles
-theme: minima
 plugins:
   - jekyll-coffeescript
   - jekyll-default-layout
@@ -27,15 +37,25 @@ plugins:
   - jekyll-readme-index
   - jekyll-titles-from-headings
   - jekyll-relative-links
+exclude:
+  - _ignore
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - example_profile.yaml
+  - LICENSE.txt
 
-title: FOSS@MAGIC Profiles
-author: RIT
-email: foss@rit.edu
-description: The profiles are used for record-keeping and contact information
-github_username:  FOSSRIT
 
+# --- theme settings ---
+
+theme: minima
 header_pages:
   - faculty.html
   - student.html
   - mentor.html
   - alum.html
+
+
+# --- build settings ---
+
+exclude: [vendor] # https://jekyllrb.com/docs/continuous-integration/travis-ci/
