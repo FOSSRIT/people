@@ -7,6 +7,7 @@ task :test do
   options = {
     :check_html => true,
     :empty_alt_ignore => true,
+    :external_only => true,
     :http_status_ignore => [0,999],
     :cache => {
       :timeframe => '6w'
