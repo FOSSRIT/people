@@ -24,9 +24,6 @@ incremental: false
 highlighter: rouge
 gist:
   noscript: false
-kramdown:
-  math_engine: mathjax
-  syntax_highlighter: rouge
 plugins:
   - jekyll-coffeescript
   - jekyll-default-layout
@@ -37,13 +34,6 @@ plugins:
   - jekyll-readme-index
   - jekyll-titles-from-headings
   - jekyll-relative-links
-exclude:
-  - _ignore
-  - Gemfile
-  - Gemfile.lock
-  - README.md
-  - example_profile.yaml
-  - LICENSE.txt
 
 
 # --- theme settings ---
@@ -58,4 +48,17 @@ header_pages:
 
 # --- build settings ---
 
-exclude: [vendor] # https://jekyllrb.com/docs/continuous-integration/travis-ci/
+# https://jekyllrb.com/docs/continuous-integration/travis-ci/
+exclude:
+  - _ignore
+  - example_profile.yaml
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE.txt
+  - Rakefile
+  - README.md
+  - vendor
+kramdown:
+  math_engine: mathjax
+  syntax_highlighter: rouge
+permalink: pretty  # no .html extensions
