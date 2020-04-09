@@ -19,6 +19,17 @@ script:
   - yamllint -c .yamllintrc _data/
   - bundle exec rake test
 
+deploy:
+  committer_from_gh: true
+  local_dir: "_site/"
+  provider: pages
+  skip_cleanup: true
+  target_branch: gh-pages
+  token: "$GITHUB_TOKEN"
+  on:
+    branch: master
+
 env:
   global:
     - NOKOGIRI_USE_SYSTEM_LIBRARIES: true
+    - secure: GU9wxFaHqPCpL1VKcVKPUVOmgPdmmhY4rHb4Rp5lQzdVgDblhutlMefmPeM+67fr374GM2H/f4mCu72gyQg2VpzHV2NsShE4RZ8WPv3qCgfw3mw2RwgMX0u9yq61CIDPzR4xS2prg+qxmfbiRnJdakNqgfcwYz4eyWpLbrEBReY=
