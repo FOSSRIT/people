@@ -18,6 +18,7 @@ github_username: FOSSRIT
 
 # --- general settings ---
 
+baseurl: /people
 lsi: false
 safe: true
 incremental: false
