@@ -1,13 +1,15 @@
-# foss-profiles
+people
+======
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
-[![Build Status](https://travis-ci.org/FOSSRIT/foss-profiles.svg?branch=master)](https://travis-ci.org/FOSSRIT/foss-profiles)
+[![Build Status](https://travis-ci.org/FOSSRIT/people.svg?branch=master)](https://travis-ci.org/FOSSRIT/people)
 
-This is a jekyll static site auto-generated via Github pages. Each student, faculty, and alum you see on our page are members of FOSS@MAGIC.
+Interactive directory of FOSS@RIT community members generated from YAML profiles and built with Jekyll
+
 
 ## About
 
-foss-profiles helps [FOSS@MAGIC](http://foss.rit.edu "Free and Open Source Software at RIT") faculty and staff maintain a current roster of:
+The **People** project [FOSS@MAGIC](https://fossrit.github.io "Free and Open Source Software at RIT") faculty and staff maintain a current roster of:
 
 * Alums
 * Faculty
@@ -15,14 +17,14 @@ foss-profiles helps [FOSS@MAGIC](http://foss.rit.edu "Free and Open Source Softw
 * Students
 
 The profiles are used for record-keeping and contact information.
-They are also planned to eventually appear on the reworked [FOSS@MAGIC website](http://foss.rit.edu "Free and Open Source Software at RIT").
+
 
 ## Installation
 
-foss-profiles uses a ruby based static site generator called, [Jekyll](https://jekyllrb.com/). 
+**People** uses a Ruby-based static site generator called [Jekyll](https://jekyllrb.com/).
 
-1. Install a full [Ruby development environment](/docs/installation/).
-1. Install bundler and this project's gemfile.
+1. Install a full [Ruby development environment](https://www.ruby-lang.org/en/documentation/installation/).
+1. Install `bundler` and this project's `Gemfile`.
 
     ```bash
     gem install bundler
@@ -32,16 +34,20 @@ foss-profiles uses a ruby based static site generator called, [Jekyll](https://j
 1. Build the site and make it available on a local server.
 
     ```bash
-    bundle exec jekyll serve
+    bundle exec jekyll serve --watch
     ```
 
 1. Browse to http://localhost:4000
 
+Ta-da, the project should appear locally in your browser.
+
+
 ## Usage
 
 ```bash
-bundle exec jekyll serve
+bundle exec jekyll serve --watch
 ```
+
 
 ## Contributing
 
@@ -49,17 +55,17 @@ Want to contribute a profile?
 See our [contributing guidelines](https://github.com/FOSSRIT/foss-profiles/blob/master/.github/CONTRIBUTING.md "How to contribute a new FOSS profile").
 
 If you want to help with the actual project, awesome!
-Help is welcome to make the template prettier or anything you think could be improved.
-Note foss-profiles is a **jekyll** project.
+First, check the [open issues](https://github.com/FOSSRIT/people/issues) for things we are working on or need help with.
+Please open an issue to discuss changes before submitting a pull request.
 
-Need help?
+### Need help?
+
 Join `#rit-foss` on the Freenode IRC network or join the bridged Telegram group.
 
-* [IRC web chat](https://webchat.freenode.net/?channels=rit-foss "FOSS @ RIT community on Freenode IRC")
-* [Telegram](https://t.me/fossrit "FOSS @ RIT community on Telegram")
+* [IRC web chat](https://webchat.freenode.net/#rit-foss-admin "FOSS@RIT Tech Team on Freenode IRC")
+* [Telegram](https://t.me/fossrit_techteam "FOSS@RIT Tech Team on Telegram")
+
 
 ## Legal
 
-[![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
-
-All work licensed under the [GPLv3 license](https://github.com/FOSSRIT/foss-profiles/blob/master/LICENSE.txt).
+All work licensed under [GPLv3](https://www.gnu.org/licenses/gpl-3.0.en.html).
