@@ -1,10 +1,12 @@
 ---
 name: Christian Martin
+website: https://ctmartin.me/
 blog: https://blog.ctmartin.me/
-email: ctm2142@rit.edu
+email: ctmartin@mail.rit.edu
 major: New Media Interactive Development
 graduation: 2020
 handle: ctmartin
 forges:
   GitHub: https://github.com/ct-martin
-bio: Also RITlug member
+  GitLab: https://gitlab.com/ctmartin
+bio: Front-end/interactive Web Dev
