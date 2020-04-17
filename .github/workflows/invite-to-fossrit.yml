@@ -1,0 +1,21 @@
+---
+- name: Inclusive Organization
+  on:
+    push:
+      branches: master
+  jobs:
+    invite:
+      runs-on: ubuntu-latest
+      steps:
+        - name: Invite contributor to the organization
+          uses: lekterable/inclusive-organization-action@v1.1.0
+          with:
+            organization: FOSSRIT
+            team: friends-of-foss
+            comment: >
+              Thank you for contributing to the FOSSRIT/people repository. If
+              you have not already done so, consider adding a profile of your
+              own! As a token of our appreciation, here is an invite to the
+              FOSSRIT GitHub organization. See you around!
+          env:
+            ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
