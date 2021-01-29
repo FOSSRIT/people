@@ -1,0 +1,52 @@
+---
+# https://circleci.com/docs/2.0/configuration-reference
+version: 2.1
+
+workflows:
+  main:
+    jobs:
+      - lint:
+          docker:
+            - image: cimg/base:stable
+          steps:
+            - checkout
+            - sudo apt-get update
+            - sudo apt install yamllint
+            - yamllint -c .yamllintrc .
+      - build:
+          docker:
+            - image: cimg/ruby:3.0
+          steps:
+            - checkout
+            - bundle install
+            - bundle exec rake test
+      - deploy:
+          filters:
+            branches:
+              only: main
+          requires:
+            - lint
+            - build
+
+jobs:
+  deploy:
+    docker:
+      - image: cibuilds/base:latest
+    working_directory: ~/hugo
+    environment:
+      HUGO_BUILD_DIR: ~/hugo/inventory/public
+    steps:
+      # deploy.sh dependencies
+      - run: apk add rsync
+
+      # clone repo (required to access `.circleci/deploy.sh`)
+      - run: git clone --depth=1 https://github.com/unicef/inventory.git
+
+      # checkout generated html
+      - attach_workspace:
+          at: inventory
+
+      # deploy to production
+      - deploy:
+          name: Deploy to GitHub Pages
+          command: ./inventory/.circleci/deploy.sh

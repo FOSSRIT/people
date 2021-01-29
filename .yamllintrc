@@ -1,1 +1,5 @@
-line-length: {max: 140}
+extends: relaxed
+ignore: vendor/
+
+rules:
+  line-length: {max: 140}
