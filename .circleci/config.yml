@@ -5,21 +5,8 @@ version: 2.1
 workflows:
   main:
     jobs:
-      - lint:
-          docker:
-            - image: cimg/base:stable
-          steps:
-            - checkout
-            - sudo apt-get update
-            - sudo apt install yamllint
-            - yamllint -c .yamllintrc .
-      - build:
-          docker:
-            - image: cimg/ruby:3.0
-          steps:
-            - checkout
-            - bundle install
-            - bundle exec rake test
+      - lint
+      - build
       - deploy:
           filters:
             branches:
@@ -29,22 +16,53 @@ workflows:
             - build
 
 jobs:
+  lint:
+    docker:
+      - image: cimg/base:stable
+    steps:
+      - checkout
+      - run: sudo apt-get update
+      - run: sudo apt install yamllint
+      - run: yamllint -c .yamllintrc .
+  build:
+    docker:
+      - image: cimg/ruby:2.7
+    steps:
+      - checkout
+
+      - restore_cache:
+          key: FOSSRIT-people-ruby-{{ checksum "Gemfile.lock" }}
+      - run: bundle install
+      - save_cache:
+          key: FOSSRIT-people-ruby-{{ checksum "Gemfile.lock" }}
+          paths:
+            - vendor/bundle
+
+      - restore_cache:
+          key: FOSSRIT-people-htmlproofer-{{ checksum "Gemfile.lock" }}
+      - run: bundle exec rake test
+      - save_cache:
+          key: FOSSRIT-people-htmlproofer-{{ checksum "Gemfile.lock" }}
+          paths:
+            - tmp/.htmlproofer
+
+      - persist_to_workspace:
+          root: _site
+          paths:
+            - ./*
   deploy:
     docker:
       - image: cibuilds/base:latest
-    working_directory: ~/hugo
-    environment:
-      HUGO_BUILD_DIR: ~/hugo/inventory/public
     steps:
       # deploy.sh dependencies
       - run: apk add rsync
 
       # clone repo (required to access `.circleci/deploy.sh`)
-      - run: git clone --depth=1 https://github.com/unicef/inventory.git
+      - run: git clone https://github.com/FOSSRIT/people.git
 
       # checkout generated html
       - attach_workspace:
-          at: inventory
+          at: _site
 
       # deploy to production
       - deploy:
