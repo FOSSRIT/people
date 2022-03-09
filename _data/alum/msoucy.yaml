@@ -1,7 +1,7 @@
 ---
 name: Matt Soucy
 blog: http://msoucy.me
-email: msoucy@csh.rit.edu
+email: git@msoucy.me
 major: Computer Science
 graduation: 2016
 employer: BAE Systems
@@ -9,5 +9,5 @@ handle: msoucy
 forges:
     GitHub: https://github.com/msoucy
     BitBucket: https://bitbucket.org/msoucy
-    Personal: http://code.msoucy.me
+    Personal: http://git.msoucy.me
 bio: Former captain of the FOSSBox, works on protocol and backend development
